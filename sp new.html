@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spring Break on Campus: 
+A Week of Big Work</title>
+
+<style>
+
+:root{
+--bg:#f5f8fc;
+--paper:#ffffff;
+--ink:#1f2937;
+--muted:#667085;
+--line:#d8e2ee;
+--blue:#1d4ed8;
+--blue-soft:#eaf1ff;
+--teal:#0f766e;
+--teal-soft:#e8faf7;
+--purple:#7c3aed;
+--purple-soft:#f1ebff;
+--shadow:0 20px 50px rgba(15,23,42,.08);
+--card-shadow:0 10px 24px rgba(15,23,42,.04);
+--max:1160px;
+}
+
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:Inter, Arial, Helvetica, sans-serif;
+color:var(--ink);
+background:
+radial-gradient(circle at top left,#edf4ff 0,transparent 28%),
+linear-gradient(180deg,#f8fbff 0%,var(--bg) 100%);
+line-height:1.7;
+}
+
+.page{
+max-width:var(--max);
+margin:36px auto;
+background:var(--paper);
+border-radius:30px;
+box-shadow:var(--shadow);
+overflow:hidden;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 28px;
+background:linear-gradient(90deg,#1d4ed8,#7c3aed);
+color:#fff;
+font-weight:700;
+font-size:13px;
+letter-spacing:.06em;
+text-transform:uppercase;
+}
+
+.hero{
+padding:40px 34px 26px;
+border-bottom:1px solid var(--line);
+}
+
+.eyebrow{
+display:inline-block;
+background:var(--blue-soft);
+color:var(--blue);
+padding:7px 12px;
+border-radius:999px;
+font-size:13px;
+font-weight:700;
+margin-bottom:16px;
+}
+
+h1{
+font-size:clamp(40px,6vw,64px);
+line-height:.95;
+letter-spacing:-.03em;
+margin:0 0 12px;
+}
+
+.subline{
+font-size:20px;
+color:var(--muted);
+margin:0;
+max-width:760px;
+font-weight:500;
+}
+
+.content{
+display:grid;
+grid-template-columns:minmax(0,1fr) 280px;
+gap:30px;
+padding:24px 34px 40px;
+}
+
+.article p:first-of-type{
+font-size:18px;
+max-width:720px;
+margin:0 0 16px;
+}
+
+.dropcap::first-letter{
+float:left;
+font-size:68px;
+line-height:.9;
+padding-right:12px;
+padding-top:6px;
+font-weight:700;
+color:var(--blue);
+}
+
+.section{
+margin-top:28px;
+padding-top:18px;
+border-top:1px solid var(--line);
+}
+
+.section-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:14px;
+}
+
+.section-header h2{
+margin:0;
+font-size:30px;
+}
+
+.tag{
+font-size:12px;
+padding:7px 11px;
+border-radius:999px;
+font-weight:800;
+text-transform:uppercase;
+letter-spacing:.08em;
+}
+
+.tag.blue{background:var(--blue-soft);color:var(--blue);}
+.tag.teal{background:var(--teal-soft);color:var(--teal);}
+.tag.purple{background:var(--purple-soft);color:var(--purple);}
+
+.text-card{
+padding:18px 20px;
+background:#fff;
+border:1px solid var(--line);
+border-radius:20px;
+box-shadow:var(--card-shadow);
+margin-bottom:16px;
+}
+
+.masonry-two{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:14px;
+margin:16px 0;
+}
+
+.masonry-three{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:14px;
+margin:16px 0;
+}
+
+.masonry-two img,
+.masonry-three img{
+width:100%;
+border-radius:16px;
+box-shadow:0 12px 28px rgba(0,0,0,.08);
+}
+
+.editorial-callout{
+margin:18px 0;
+padding:20px 22px;
+font-size:22px;
+font-weight:700;
+border-radius:22px;
+background:linear-gradient(135deg,#eef5ff,#f3ecff);
+border:1px solid #d7dcff;
+}
+
+.sidebar{
+position:sticky;
+top:20px;
+display:grid;
+gap:16px;
+height:fit-content;
+}
+
+.panel{
+padding:18px;
+border-radius:20px;
+border:1px solid var(--line);
+}
+
+.panel.blue{
+background:linear-gradient(180deg,#eef4ff,#fff);
+}
+
+.panel.teal{
+background:linear-gradient(180deg,#ecfffb,#fff);
+}
+
+.panel h3{
+margin:0 0 10px;
+font-size:14px;
+text-transform:uppercase;
+}
+
+.panel ul{
+margin:0;
+padding-left:18px;
+}
+
+.panel li{
+font-size:14px;
+margin-bottom:6px;
+}
+
+@media (max-width:980px){
+
+.content{
+grid-template-columns:1fr;
+}
+
+.sidebar{
+position:static;
+}
+
+.masonry-two,
+.masonry-three{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<main class="page">
+
+<div class="topbar">
+<div>AIS Campus Times</div>
+<div>Spring Break Edition</div>
+</div>
+
+<header class="hero">
+<div class="eyebrow">Spring Break Operations Recap</div>
+<h1>Spring Break on Campus: A Week of Big Work</h1>
+<p class="subline">While students were away, progress continued.</p>
+</header>
+
+<div class="content">
+
+<article class="article">
+
+<p class="dropcap">
+During Spring Break, work continued across campus as teams used the week to tackle repairs, refresh outdoor spaces, and prepare buildings for everyone's return.
+</p>
+
+<section class="section">
+
+<div class="section-header">
+<h2>Maintenance</h2>
+<span class="tag blue">Repairs & Systems</span>
+</div>
+
+<div class="editorial-callout">
+New HVAC's were installed with state-of-the-art Air Scrubbers that remove harmful particles—dust, mold, pollen, viruses, and bacteria—from the air.
+</div>
+
+<div class="masonry-two">
+<img src="https://drive.google.com/thumbnail?id=16MgyQdWSGLQMi6cAW1eUF2lxiAgicDnW&sz=w2000">
+<img src="https://drive.google.com/thumbnail?id=13a5tONuwM-HNuSjpjRV88P_MESZtJ2m9&sz=w2000">
+</div>
+
+<div class="masonry-two">
+<img src="https://drive.google.com/thumbnail?id=13Khrtkx5vl2opyWsXcIIOh_i8d1YmMjC&sz=w2000">
+<img src="https://drive.google.com/thumbnail?id=1I8UaNBMSHy3RNvV1kuQKhVTh619cNpk5&sz=w2000">
+</div>
+
+<div class="masonry-two">
+<img src="https://drive.google.com/thumbnail?id=1J-moxOGt514Q61d_oBI0Nk9vrIzYflXR&sz=w2000">
+<img src="https://drive.google.com/thumbnail?id=1ccviaNuNIbZrpXZn2jmZCyGhckFx7DSq&sz=w2000">
+</div>
+
+<div class="masonry-two">
+<img src="https://drive.google.com/thumbnail?id=1LAK2PffX79xTvhGtSP51Jw6zA_l4MaoQ&sz=w2000">
+</div>
+
+
+<section class="section">
+
+<div class="section-header">
+<h2>Grounds</h2>
+<span class="tag teal">Outdoor Impact</span>
+</div>
+
+<!-- flowers on wall + hand with plaque -->
+<div class="masonry-two">
+<img src="https://drive.google.com/thumbnail?id=14yfH9FAYCNO8H38Ey4J9Q4STo6XT8rMU&sz=w2000" alt="Flowers on wall">
+<img src="https://drive.google.com/thumbnail?id=1EuCA3-R4_2_iVRhDoZXV8nT9Wy42bA7i&sz=w2000" alt="Hand with plaque">
+</div>
+
+<!-- callout -->
+<div class="editorial-callout">
+The ELC recevied phase 1 of The International Flora Project. Native flowers from Germany were installed for students to expierience. Addtional flora installations to come.
+</div>
+
+<!-- flower in pot + playground -->
+<div class="masonry-two">
+<img src="https://drive.google.com/thumbnail?id=1NfhqpecbxWn0ERIlxhkmtvbxQbXEH3c5&sz=w2000" alt="Flower in pot">
+<img src="https://drive.google.com/thumbnail?id=1pc-SFmYnAiTLkSyfT0YfexgBOjyiknPT&sz=w2000" alt="Playground">
+</div>
+
+<!-- pressure washing -->
+<div class="grounds-medium"><img src="https://drive.google.com/thumbnail?id=1yA3sxI10n0vcwSnhmy-J5_pidnfF1-uS&amp;sz=w2000" alt="Pressure washing" width="336" height="448" />
+</div>
+
+</section>
+<section class="section">
+
+<div class="section-header">
+<h2>Putting In Work</h2>
+<span class="tag purple">Behind the Scenes</span>
+</div>
+
+<div class="text-card">
+<p>
+Your Operations teams worked to prepare the campus for an amazing Spring Semeester.
+</p>
+</div>
+
+<div class="masonry-two">
+<img src="https://drive.google.com/thumbnail?id=1krX29gUaYD9WgX0Xq2XneIsvmfeKsc1K&sz=w2000">
+<img src="https://drive.google.com/thumbnail?id=1J-WncYdiZZa06PjXCLysu8WDw4Uqc-MT&sz=w2000">
+</div>
+
+<div class="masonry-two">
+<img src="https://drive.google.com/thumbnail?id=1YGsfVd_vacpXWSCF7sXrGqSZSSVG8kTC&sz=w2000">
+</div>
+
+</section>
+
+</article>
+
+<aside class="sidebar">
+
+<div class="panel blue">
+<h3>Work Highlights</h3>
+<ul>
+<li>HVAC Replacements</li>
+<li>New Filtration Systems</li>
+<li>Painting Indoors & Outdoor</li>
+</ul>
+</div>
+
+<div class="panel teal">
+<h3>Spring Break Impact</h3>
+<p>The work done during the break helps shape the experience of everyone who returns to campus.</p>
+</div>
+
+</aside>
+
+</div>
+
+</main>
+
+</body>
+</html>
